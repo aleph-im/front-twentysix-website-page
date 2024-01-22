@@ -1,4 +1,4 @@
-import { Button, Navbar } from '@aleph-front/aleph-core'
+import { Button, Navbar } from '@aleph-front/core'
 import styled from 'styled-components'
 
 export const StyledHeader = styled.header`
@@ -21,9 +21,9 @@ export const StyledButton = styled(Button).attrs((props) => {
   return {
     ...props,
     color: 'main0',
-    kind: 'neon',
-    size: 'regular',
-    variant: 'tertiary',
+    kind: 'yellow',
+    size: 'lg',
+    variant: 'primary',
   }
 })`
   display: block;

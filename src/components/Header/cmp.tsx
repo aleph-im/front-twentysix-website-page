@@ -1,4 +1,9 @@
-import { Logo, NavbarLink, NavbarLinkList } from '@aleph-front/aleph-core'
+import {
+  Logo,
+  NavbarLink,
+  NavbarLinkList,
+  RouterNavbar,
+} from '@aleph-front/core'
 import Link from 'next/link'
 
 import { StyledHeader, StyledButton, StyledNavbar } from './styles'
@@ -10,51 +15,37 @@ export const Header = () => {
 
   return (
     <StyledHeader>
-      <StyledNavbar
-        open={isOpen}
-        onToggle={setIsOpen}
-        logo={
-          <Link href="/">
-            <Logo />
-          </Link>
-        }
-      >
-        <>
-          <NavbarLinkList withSlash>
-            <NavbarLink>
-              <Link
-                key="solutions"
-                href="/#solutions"
-                onClick={handleCloseMenu}
-              >
-                Solutions
-              </Link>
-            </NavbarLink>
-            <NavbarLink>
-              <Link key="roadmap" href="/#roadmap" onClick={handleCloseMenu}>
-                Roadmap
-              </Link>
-            </NavbarLink>
-            <NavbarLink>
-              <Link key="indexing" href="/#indexing" onClick={handleCloseMenu}>
-                Indexing
-              </Link>
-            </NavbarLink>
-          </NavbarLinkList>
-          <NavbarLinkList>
-            <NavbarLink>
-              <StyledButton
-                key="cloud-app"
-                forwardedAs="a"
-                target="_blank"
-                href="https://console.aleph.im"
-              >
-                Launch Cloud dApp
-              </StyledButton>
-            </NavbarLink>
-          </NavbarLinkList>
-        </>
-      </StyledNavbar>
+      <RouterNavbar
+        Link={function noRefCheck() {}}
+        breakpoint="md"
+        onToggle={function noRefCheck() {}}
+        pathname="/"
+        routes={[
+          {
+            external: true,
+            href: 'https://console.aleph.im/',
+            name: 'Developers',
+            target: '_blank',
+          },
+          {
+            external: true,
+            href: 'https://twentysix.cloud/',
+            name: 'Solutions',
+          },
+          {
+            external: true,
+            href: 'https://explorer.aleph.im/',
+            name: 'Use cases',
+            target: '_blank',
+          },
+          {
+            external: true,
+            href: 'https://swap.aleph.im/',
+            name: 'Contact us',
+            target: '_blank',
+          },
+        ]}
+      />
     </StyledHeader>
   )
 }

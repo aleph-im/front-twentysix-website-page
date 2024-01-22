@@ -1,6 +1,6 @@
 {
-  "name": "front-aleph-website-page",
-  "version": "0.1.9",
+  "name": "front-twentysix-website-page",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -10,8 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@aleph-front/aleph-core": "^1.5.10",
-    "@fortawesome/fontawesome-svg-core": "^6.3.0",
+    "@aleph-front/core": "^1.15.12",
     "aleph-sdk-ts": "^3.4.3",
     "eslint": "8.35.0",
     "eslint-config-next": "13.2.1",
