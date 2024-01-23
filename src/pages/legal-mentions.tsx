@@ -1,8 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import AutoBreadcrumb from '@/components/AutoBreadcrumb/cmp'
 import Container from '@/components/Container/cmp'
-import H1 from '@/components/H1/cmp'
 import H2 from '@/components/H2/cmp'
 import { Breadcrumb, Col, Row, TextGradient } from '@aleph-front/core'
 import Link from 'next/link'

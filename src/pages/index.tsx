@@ -57,8 +57,10 @@ export default function Home() {
                   seamlessly in one platform
                 </p>
                 <Button
+                  forwardedAs="a"
+                  target="_blank"
                   size="lg"
-                  href="https://console.aleph.im"
+                  href="https://console.twentysix.cloud"
                   kind="functional"
                   variant="primary"
                   tw="py-80"
@@ -69,7 +71,7 @@ export default function Home() {
               <Col>
                 <Image
                   src={`${imgPrefix}/img/main-illustration.svg`}
-                  alt="Main Illustration"
+                  alt="Twentysix Cloud"
                   fill={true}
                   tw="relative!"
                   priority={true}
@@ -82,7 +84,7 @@ export default function Home() {
       <section className="fx-grain-1" tw="px-0 pt-20 pb-10 md:pb-20" ref={ref3}>
         <Container>
           <Row xs={1} md={2} gap="1.5rem">
-            <Col>
+            <Col tw="order-last sm:order-first">
               <Image
                 src={`${imgPrefix}/img/general-computing.svg`}
                 alt="Computing"
@@ -104,7 +106,7 @@ export default function Home() {
                 </p>
                 <Button
                   forwardedAs="a"
-                  href="https://console.aleph.im/"
+                  href="https://console.twentysix.cloud/"
                   target="_blank"
                   kind="gradient"
                   variant="primary"
@@ -137,7 +139,7 @@ export default function Home() {
                   </p>
                   <Button
                     forwardedAs="a"
-                    href="https://console.aleph.im/"
+                    href="https://console.twentysix.cloud/"
                     target="_blank"
                     kind="gradient"
                     variant="primary"
@@ -149,7 +151,7 @@ export default function Home() {
                   </Button>
                 </div>
               </Col>
-              <Col>
+              <Col tw="mt-12 sm:mt-0">
                 <Image
                   src={`${imgPrefix}/img/general-storage.svg`}
                   alt="Storage"
@@ -164,7 +166,7 @@ export default function Home() {
       <section className="fx-grain-1" tw="px-0 pt-20 pb-10 md:pb-20" ref={ref3}>
         <Container>
           <Row xs={1} md={2} gap="1.5rem">
-            <Col>
+            <Col tw="order-last sm:order-first">
               <Image
                 src={`${imgPrefix}/img/general-developer-friendly.svg`}
                 alt="Developer Friendly"
@@ -207,12 +209,14 @@ export default function Home() {
                 />
                 <div tw="pt-16">
                   <Button
-                    href="https://bit.ly/3GAAjii"
+                    forwardedAs="a"
+                    href="https://docs.aleph.im"
                     target="_blank"
                     kind="gradient"
                     variant="tertiary"
                     size="lg"
                     color="main0"
+                    tw="!my-0"
                   >
                     Explore solutions
                   </Button>
@@ -229,56 +233,72 @@ export default function Home() {
               Trusted by
             </H1>
             <div tw="flex items-center justify-center flex-wrap opacity-40 gap-20">
-              <Image
-                src={`${imgPrefix}/img/partner/p1.svg`}
-                width={104}
-                height={81}
-                alt="Ubisoft"
-              />
-              <Image
-                src={`${imgPrefix}/img/partner/p2.svg`}
-                width={157}
-                height={31}
-                alt="Request"
-              />
-              <Image
-                src={`${imgPrefix}/img/partner/p3.svg`}
-                width={144}
-                height={26}
-                alt="Libertai"
-              />
-              <Image
-                src={`${imgPrefix}/img/partner/p4.png`}
-                width={51}
-                height={48}
-                alt="Campfire"
-              />
+              <div tw="w-48 basis-1/4 sm:basis-auto relative">
+                <Image
+                  src={`${imgPrefix}/img/partner/p1.svg`}
+                  width={104}
+                  height={81}
+                  alt="Ubisoft"
+                />
+              </div>
+              <div tw="w-48 basis-1/4 sm:basis-auto relative">
+                <Image
+                  src={`${imgPrefix}/img/partner/p2.svg`}
+                  width={157}
+                  height={31}
+                  alt="Request"
+                />
+              </div>
+              <div tw="w-48 basis-1/4 sm:basis-auto relative">
+                <Image
+                  src={`${imgPrefix}/img/partner/p3.svg`}
+                  width={144}
+                  height={26}
+                  alt="Libertai"
+                />
+              </div>
+              <div tw="w-48 basis-1/4 sm:basis-auto relative">
+                <Image
+                  src={`${imgPrefix}/img/partner/p4.png`}
+                  width={51}
+                  height={48}
+                  alt="Campfire"
+                />
+              </div>
             </div>
             <div tw="flex items-center justify-center flex-wrap opacity-40 pt-10 gap-20">
-              <Image
-                src={`${imgPrefix}/img/partner/p5.svg`}
-                width={185}
-                height={25}
-                alt="Synaps"
-              />
-              <Image
-                src={`${imgPrefix}/img/partner/p6.svg`}
-                width={144}
-                height={26}
-                alt="Anima"
-              />
-              <Image
-                src={`${imgPrefix}/img/partner/p7.png`}
-                width={144}
-                height={26}
-                alt="Fishnet"
-              />
-              <Image
-                src={`${imgPrefix}/img/partner/p8.svg`}
-                width={144}
-                height={26}
-                alt="Strateg"
-              />
+              <div tw="w-48 basis-1/4 sm:basis-auto relative">
+                <Image
+                  src={`${imgPrefix}/img/partner/p5.svg`}
+                  width={185}
+                  height={25}
+                  alt="Synaps"
+                />
+              </div>
+              <div tw="w-48 basis-1/4 sm:basis-auto relative">
+                <Image
+                  src={`${imgPrefix}/img/partner/p6.svg`}
+                  width={144}
+                  height={26}
+                  alt="Anima"
+                />
+              </div>
+              <div tw="w-48 basis-1/4 sm:basis-auto relative">
+                <Image
+                  src={`${imgPrefix}/img/partner/p7.png`}
+                  width={144}
+                  height={26}
+                  alt="Fishnet"
+                />
+              </div>
+              <div tw="w-48 basis-1/4 sm:basis-auto relative">
+                <Image
+                  src={`${imgPrefix}/img/partner/p8.svg`}
+                  width={144}
+                  height={26}
+                  alt="Strateg"
+                />
+              </div>
             </div>
           </div>
         </Container>
@@ -286,60 +306,60 @@ export default function Home() {
       <section tw="px-0 py-16">
         <Container>
           <div tw="flex flex-col items-center justify-center">
-            <H1 color="base2" type="h3" tw="mb-6">
+            <H1 color="base2" type="h3" tw="mb-12 sm:mb-6 text-center">
               Supported blockchains
             </H1>
             <div tw="flex items-center justify-center flex-wrap opacity-40 gap-16">
-              <div tw="w-12 h-12 relative">
+              <div tw="w-12 h-12 basis-1/3 sm:basis-auto relative">
                 <Image
                   src={`${imgPrefix}/img/blockchains/blck1.svg`}
                   fill={true}
                   alt="Ethereum"
                 />
               </div>
-              <div tw="w-12 h-12 relative">
+              <div tw="w-12 h-12 basis-1/3 sm:basis-auto relative">
                 <Image
                   src={`${imgPrefix}/img/blockchains/blck2.svg`}
                   fill={true}
                   alt="Solana"
                 />
               </div>
-              <div tw="w-12 h-12 relative">
+              <div tw="w-12 h-12 basis-1/3 sm:basis-auto relative">
                 <Image
                   src={`${imgPrefix}/img/blockchains/blck3.svg`}
                   fill={true}
                   alt="Binance Chain"
                 />
               </div>
-              <div tw="w-12 h-12 relative">
+              <div tw="w-12 h-12 basis-1/3 sm:basis-auto relative">
                 <Image
                   src={`${imgPrefix}/img/blockchains/blck4.svg`}
                   fill={true}
                   alt="Cosmos"
                 />
               </div>
-              <div tw="w-12 h-12 relative">
+              <div tw="w-12 h-12 basis-1/3 sm:basis-auto relative">
                 <Image
                   src={`${imgPrefix}/img/blockchains/blck5.svg`}
                   fill={true}
                   alt="Avalanche"
                 />
               </div>
-              <div tw="w-12 h-12 relative">
+              <div tw="w-12 h-12 basis-1/3 sm:basis-auto relative">
                 <Image
                   src={`${imgPrefix}/img/blockchains/blck6.svg`}
                   fill={true}
                   alt="Tezos"
                 />
               </div>
-              <div tw="w-12 h-12 relative">
+              <div tw="w-12 h-12 basis-1/3 sm:basis-auto relative">
                 <Image
                   src={`${imgPrefix}/img/blockchains/blck7.svg`}
                   fill={true}
                   alt="Polkadot"
                 />
               </div>
-              <div tw="w-12 h-12 relative">
+              <div tw="w-12 h-12 basis-1/3 sm:basis-auto relative">
                 <Image
                   src={`${imgPrefix}/img/blockchains/blck8.svg`}
                   fill={true}

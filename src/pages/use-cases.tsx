@@ -7,16 +7,15 @@ import {
   Row,
   TextGradient,
   Breadcrumb,
-  ObjectImg, Icon,
 } from '@aleph-front/core'
 import Container from '@/components/Container'
-import H1 from '@/components/H1'
 import H2 from '@/components/H2'
-import SignMeUpForm from '@/components/SignMeUpForm'
 import { useScrollTo } from '@/hooks'
 import { useRouter } from 'next/router'
 import { useBasePath } from '@/hooks/useBasePath'
 import Link from 'next/link'
+import DecentralizedTools from '@/components/DecentralizedTools'
+import { GetUpdatesSection } from '@/components/GetUpdatesSection/cmp'
 export default function UseCases() {
   const [ref1, handleScroll1] = useScrollTo()
   const [ref2, handleScroll2] = useScrollTo()
@@ -84,7 +83,7 @@ export default function UseCases() {
       <section className="fx-grain-1" tw="px-0 pt-20 pb-10 md:pb-20" ref={ref3}>
         <Container>
           <Row xs={1} md={2} gap="1.5rem">
-            <Col>
+            <Col tw="order-last sm:order-first">
               <Image
                 src={`${imgPrefix}/img/general-ubisoft.svg`}
                 alt="Ubisoft"
@@ -113,7 +112,7 @@ export default function UseCases() {
                 </p>
                 <Button
                   forwardedAs="a"
-                  href="https://console.aleph.im/"
+                  href="https://quartz.ubisoft.com/faq/technology/what-is-aleph"
                   target="_blank"
                   kind="gradient"
                   variant="tertiary"
@@ -139,23 +138,24 @@ export default function UseCases() {
                   </span>
                   <H2 className="tp-h4 md:tp-h3">
                     Libertai.io harnessing <br />
-                    aleph.im&amp;s power for <br />
+                    aleph.im&apos;s power for <br />
                     decentralized AI
                   </H2>
                   <p className="fs-18" tw="mt-0 mb-16">
-                    Libertai&amp;s large language models run on a combination of
-                    technologies such as IPFS and aleph.im. This synergy results
-                    in a fully decentralized, uncensored, secure, and resilient
-                    computing network that is, in essence, unstoppable. <br />
+                    Libertai&apos;s large language models run on a combination
+                    of technologies such as IPFS and aleph.im. This synergy
+                    results in a fully decentralized, uncensored, secure, and
+                    resilient computing network that is, in essence,
+                    unstoppable. <br />
                     <br />
-                    By utilizing Aleph.im&amp;s compute resource nodes, Libertai
-                    presents an innovative way to deliver AI technology,
-                    reinforcing its resilience, security, and scalability, while
-                    ensuring user privacy and data integrity.
+                    By utilizing Aleph.im&apos;s compute resource nodes,
+                    Libertai presents an innovative way to deliver AI
+                    technology, reinforcing its resilience, security, and
+                    scalability, while ensuring user privacy and data integrity.
                   </p>
                   <Button
                     forwardedAs="a"
-                    href="https://console.aleph.im/"
+                    href="https://libertai.io/"
                     target="_blank"
                     kind="gradient"
                     variant="tertiary"
@@ -167,7 +167,7 @@ export default function UseCases() {
                   </Button>
                 </div>
               </Col>
-              <Col>
+              <Col tw="mt-12 sm:mt-0">
                 <Image
                   src={`${imgPrefix}/img/general-ai-interface.svg`}
                   alt="Libertai"
@@ -182,7 +182,7 @@ export default function UseCases() {
       <section className="fx-grain-1" tw="px-0 pt-20 pb-10 md:pb-20" ref={ref3}>
         <Container>
           <Row xs={1} md={2} gap="1.5rem">
-            <Col>
+            <Col tw="order-last sm:order-first">
               <Image
                 src={`${imgPrefix}/img/general-ipfs-storage.svg`}
                 alt="Developer Friendly"
@@ -195,22 +195,22 @@ export default function UseCases() {
                 <span className="tp-info text-main0" tw="mb-0">
                   Use case
                 </span>
-                <H2 className="tp-h4 md:tp-h3">Request network</H2>
+                <H2 className="tp-h4 md:tp-h3">Request finance</H2>
                 <p className="fs-18" tw="mt-0 mb-16">
                   Aleph.im collaborated with Request Network, the invoicing
                   technology for DeFi, DAOs, and Crypto-first companies.
                   <br />
                   <br />
-                  Aleph.im bridged Request's dedicated IPFS network and the IPFS
-                  public network, providing backup storage for invoicing and
-                  transaction data. This partnership added more resilience and
-                  decentralization to the Request network, trusted by notable
-                  companies in the crypto industry like Maker, Gnosis, Aave,
-                  Ocean, and Near Foundation.
+                  Aleph.im bridged Request&apos;s dedicated IPFS network and the
+                  IPFS public network, providing backup storage for invoicing
+                  and transaction data. This partnership added more resilience
+                  and decentralization to the Request network, trusted by
+                  notable companies in the crypto industry like Maker, Gnosis,
+                  Aave, Ocean, and Near Foundation.
                 </p>
                 <Button
                   forwardedAs="a"
-                  href="https://console.aleph.im/"
+                  href="https://www.request.finance/post/request-partners-with-aleph-im-expanding-decentralized-storage-of-invoicing-data-on-the-blockchain"
                   target="_blank"
                   kind="gradient"
                   variant="tertiary"
@@ -225,122 +225,8 @@ export default function UseCases() {
           </Row>
         </Container>
       </section>
-      <section tw="px-0 py-12 lg:py-36">
-        <Container>
-          <div tw="relative">
-            <Row xs={1} md={2} gap="1.5rem">
-              <Col>
-                <h3 className="text-base2 tp-h3 md:tp-h3">
-                  Decentralized cloud solution
-                </h3>
-                <p tw="mb-12">
-                  TwentySix Cloud is a decentralized cloud solution, offering a
-                  full range of blockchain-based storage and compute engine for
-                  businesses and applications, enhancing data security ownership
-                  in a decentralized ecosystem.
-                </p>
-              </Col>
-            </Row>
-            <Row xs={1} sm={2} md={2} lg={4} gap="1.5rem">
-              <Col>
-                <ObjectImg id="Object9" size="100px" color="main0" />
-                <p className="tp-h7" tw="mt-6">
-                  Computing
-                </p>
-                <p tw="mt-2 mb-12 min-h-fit">
-                  Secure and customizable compute service to create and run
-                  Virtual Machines on aleph.im infrastructure layer.
-                </p>
-                <Button
-                  forwardedAs="a"
-                  href="https://console.aleph.im/"
-                  target="_blank"
-                  kind="gradient"
-                  variant="secondary"
-                  size="lg"
-                  color="main0"
-                  tw="!my-0"
-                >
-                  Get started
-                </Button>
-              </Col>
-              <Col>
-                <ObjectImg id="Object1" size="100px" color="main0" />
-                <p className="tp-h7" tw="mt-6">
-                  Storage
-                </p>
-                <p tw="mt-2 mb-12 min-h-fit">
-                  Store any type and amount of data including InterPlanetary
-                  File System and block-storage.
-                </p>
-                <Button
-                  forwardedAs="a"
-                  href="https://console.aleph.im/"
-                  target="_blank"
-                  kind="gradient"
-                  variant="secondary"
-                  size="lg"
-                  color="main0"
-                  tw="!my-0"
-                >
-                  Get started
-                </Button>
-              </Col>
-              <Col>
-                <ObjectImg id="Object15" size="100px" color="main0" />
-                <p className="tp-h7" tw="mt-6">
-                  Web3 cloud tooling
-                </p>
-                <p tw="mt-2 mb-12 min-h-fit">
-                  Custom domains, SSH access, Verifiable Random Function for
-                  gaming, open-source, multi-chain indexing blockchain data.
-                </p>
-                <Button
-                  forwardedAs="a"
-                  href="https://console.aleph.im/"
-                  target="_blank"
-                  kind="gradient"
-                  variant="secondary"
-                  size="lg"
-                  color="main0"
-                  tw="!my-0"
-                >
-                  Get started
-                </Button>
-              </Col>
-              <Col tw="mt-36 text-right">
-                <Button
-                  forwardedAs="a"
-                  href="https://console.aleph.im/"
-                  target="_blank"
-                  kind="gradient"
-                  variant="primary"
-                  size="lg"
-                  color="main0"
-                  tw="!my-0"
-                >
-                  Launch cloud dApp <Icon name="map" color="base0" />
-                </Button>
-              </Col>
-            </Row>
-          </div>
-        </Container>
-      </section>
-      <section className="fx-grain-2" tw="px-0 py-12 md:py-20">
-        <Container>
-          <div tw="md:flex md:justify-center">
-            <div tw="md:inline-flex md:flex-col md:items-center">
-              <H1 color="base2" type="h3" tw="mb-6">
-                Get the latest updates
-              </H1>
-              <p className="fs-18 text-base2" tw="mt-0 mb-4">
-                Be the first to know about new launches
-              </p>
-              <SignMeUpForm />
-            </div>
-          </div>
-        </Container>
-      </section>
+      <DecentralizedTools />
+      <GetUpdatesSection />
     </>
   )
 }

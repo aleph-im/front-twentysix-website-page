@@ -23,7 +23,7 @@ export const Header = () => {
         routes={[
           {
             external: true,
-            href: 'https://console.aleph.im/',
+            href: 'https://console.twentysix.cloud/',
             name: 'Developers',
             target: '_blank',
           },
