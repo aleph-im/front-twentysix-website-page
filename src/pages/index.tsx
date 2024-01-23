@@ -1,15 +1,7 @@
 import { useEffect } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
-import {
-  Button,
-  Col,
-  Row,
-  BulletList,
-  TextInput,
-  useResponsiveMin,
-  TextGradient,
-} from '@aleph-front/core'
+import { Button, Col, Row, BulletList, TextGradient } from '@aleph-front/core'
 import Container from '@/components/Container'
 import H1 from '@/components/H1'
 import H2 from '@/components/H2'
@@ -174,7 +166,7 @@ export default function Home() {
           <Row xs={1} md={2} gap="1.5rem">
             <Col>
               <Image
-                src={`${imgPrefix}/img/indexing.svg`}
+                src={`${imgPrefix}/img/general-developer-friendly.svg`}
                 alt="Developer Friendly"
                 fill={true}
                 tw="relative!"
@@ -298,54 +290,62 @@ export default function Home() {
               Supported blockchains
             </H1>
             <div tw="flex items-center justify-center flex-wrap opacity-40 gap-16">
-              <Image
-                src={`${imgPrefix}/img/blockchains/blck1.svg`}
-                width={48}
-                height={48}
-                alt="Ethereum"
-              />
-              <Image
-                src={`${imgPrefix}/img/blockchains/blck2.svg`}
-                width={48}
-                height={48}
-                alt="Solana"
-              />
-              <Image
-                src={`${imgPrefix}/img/blockchains/blck3.svg`}
-                width={48}
-                height={48}
-                alt="Binance Chain"
-              />
-              <Image
-                src={`${imgPrefix}/img/blockchains/blck4.svg`}
-                width={48}
-                height={48}
-                alt="Cosmos"
-              />
-              <Image
-                src={`${imgPrefix}/img/blockchains/blck5.svg`}
-                width={48}
-                height={48}
-                alt="Avalanche"
-              />
-              <Image
-                src={`${imgPrefix}/img/blockchains/blck6.svg`}
-                width={48}
-                height={48}
-                alt="Tezos"
-              />
-              <Image
-                src={`${imgPrefix}/img/blockchains/blck7.svg`}
-                width={48}
-                height={48}
-                alt="Polkadot"
-              />
-              <Image
-                src={`${imgPrefix}/img/blockchains/blck8.svg`}
-                width={48}
-                height={48}
-                alt="Polygon"
-              />
+              <div tw="w-12 h-12 relative">
+                <Image
+                  src={`${imgPrefix}/img/blockchains/blck1.svg`}
+                  fill={true}
+                  alt="Ethereum"
+                />
+              </div>
+              <div tw="w-12 h-12 relative">
+                <Image
+                  src={`${imgPrefix}/img/blockchains/blck2.svg`}
+                  fill={true}
+                  alt="Solana"
+                />
+              </div>
+              <div tw="w-12 h-12 relative">
+                <Image
+                  src={`${imgPrefix}/img/blockchains/blck3.svg`}
+                  fill={true}
+                  alt="Binance Chain"
+                />
+              </div>
+              <div tw="w-12 h-12 relative">
+                <Image
+                  src={`${imgPrefix}/img/blockchains/blck4.svg`}
+                  fill={true}
+                  alt="Cosmos"
+                />
+              </div>
+              <div tw="w-12 h-12 relative">
+                <Image
+                  src={`${imgPrefix}/img/blockchains/blck5.svg`}
+                  fill={true}
+                  alt="Avalanche"
+                />
+              </div>
+              <div tw="w-12 h-12 relative">
+                <Image
+                  src={`${imgPrefix}/img/blockchains/blck6.svg`}
+                  fill={true}
+                  alt="Tezos"
+                />
+              </div>
+              <div tw="w-12 h-12 relative">
+                <Image
+                  src={`${imgPrefix}/img/blockchains/blck7.svg`}
+                  fill={true}
+                  alt="Polkadot"
+                />
+              </div>
+              <div tw="w-12 h-12 relative">
+                <Image
+                  src={`${imgPrefix}/img/blockchains/blck8.svg`}
+                  fill={true}
+                  alt="Polygon"
+                />
+              </div>
             </div>
           </div>
         </Container>

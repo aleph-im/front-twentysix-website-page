@@ -7,7 +7,9 @@ import {
   Row,
   TextGradient,
   Breadcrumb,
-  ObjectImg, Icon,
+  ObjectImg,
+  Icon,
+  BulletList,
 } from '@aleph-front/core'
 import Container from '@/components/Container'
 import H1 from '@/components/H1'
@@ -58,8 +60,14 @@ export default function UseCases() {
                 <Link href="/" key={'home'}>
                   Home
                 </Link>,
-                <Link href="/use-cases" key={'use-cases'}>
-                  Use cases
+                <Link href="/src/pages/what-is-twentysix-cloud" key={'why-twentysix'}>
+                  Why Twentysix
+                </Link>,
+                <Link
+                  href="/src/pages/what-is-decentralized-cloud-computing"
+                  key={'what-is-decentralized-cloud-computing'}
+                >
+                  ...
                 </Link>,
               ]}
             />
@@ -71,7 +79,9 @@ export default function UseCases() {
                   forwardedAs="h1"
                   tw="mb-0"
                 >
-                  Use cases
+                  What is <br />
+                  decentralized <br />
+                  cloud computing ?
                 </TextGradient>
                 <p className="tp-h7 text-base2 fs-26" tw="mt-8">
                   subtitle when needed only
@@ -81,151 +91,29 @@ export default function UseCases() {
           </div>
         </Container>
       </section>
-      <section className="fx-grain-1" tw="px-0 pt-20 pb-10 md:pb-20" ref={ref3}>
+      <section tw="px-0 pt-0 pb-10 md:pb-20" ref={ref3}>
         <Container>
-          <Row xs={1} md={2} gap="1.5rem">
+          <Row xs={1} md={1} gap="1.5rem">
             <Col>
-              <Image
-                src={`${imgPrefix}/img/general-ubisoft.svg`}
-                alt="Ubisoft"
-                fill={true}
-                tw="relative!"
-              />
-            </Col>
-            <Col>
-              <div className="bg-base0" tw="p-6">
-                <span className="tp-info text-main0" tw="mb-0">
-                  Use case
-                </span>
-                <H2 className="tp-h4 md:tp-h3">Ubisoft</H2>
-                <p className="fs-18" tw="mt-0 mb-16">
-                  Aleph.im joined Ubisoft’s Innovation Lab for the revolutionary
-                  integration of dynamic NFTs (Non-Fungible Tokens) in Ubisoft’s
-                  AAA game, “Tom Clancy’s Ghost Recon Breakpoint”. Aleph.im
-                  provided a decentralized storage system for these NFTs called
-                  Digits on Ubisoft’s blockchain-powered platform, Ubisoft
-                  Quartz. <br />
-                  <br />
-                  The NFTs, representing unique in-game evolvable assets,
-                  offered a new level of engagement and ownership to players,
-                  allowing them to claim, use, and trade their in-game items on
-                  the secondary market.
+              <div tw="p-0">
+                <p className="fs-18" tw="mx-auto mt-0 max-w-3xl py-12">
+                  Decentralized cloud computing with Twentysix Cloud represents
+                  a paradigm shift in how data is stored, accessed, and managed.
+                  Unlike centralized networks, our decentralized architecture
+                  distributes data across multiple nodes, ensuring no single
+                  entity controls the network. This means enhanced security,
+                  privacy, and reliability. With Twentysix Cloud, experience the
+                  next era of cloud computing, where power is returned to the
+                  user, fostering an ecosystem that thrives on transparency and
+                  trust.
                 </p>
-                <Button
-                  forwardedAs="a"
-                  href="https://console.aleph.im/"
-                  target="_blank"
-                  kind="gradient"
-                  variant="tertiary"
-                  size="lg"
-                  color="main0"
-                  tw="!my-0"
-                >
-                  Read the case
-                </Button>
+                <div tw="max-w-3xl mx-auto mb-32"></div>
               </div>
             </Col>
           </Row>
         </Container>
       </section>
-      <section tw="py-20" ref={ref1}>
-        <Container>
-          <div tw="relative">
-            <Row xs={1} md={2} gap="0">
-              <Col xs={1} md={1}>
-                <div className="bg-base0" tw="p-6">
-                  <span className="tp-info text-main0" tw="mb-0">
-                    Use case
-                  </span>
-                  <H2 className="tp-h4 md:tp-h3">
-                    Libertai.io harnessing <br />
-                    aleph.im&amp;s power for <br />
-                    decentralized AI
-                  </H2>
-                  <p className="fs-18" tw="mt-0 mb-16">
-                    Libertai&amp;s large language models run on a combination of
-                    technologies such as IPFS and aleph.im. This synergy results
-                    in a fully decentralized, uncensored, secure, and resilient
-                    computing network that is, in essence, unstoppable. <br />
-                    <br />
-                    By utilizing Aleph.im&amp;s compute resource nodes, Libertai
-                    presents an innovative way to deliver AI technology,
-                    reinforcing its resilience, security, and scalability, while
-                    ensuring user privacy and data integrity.
-                  </p>
-                  <Button
-                    forwardedAs="a"
-                    href="https://console.aleph.im/"
-                    target="_blank"
-                    kind="gradient"
-                    variant="tertiary"
-                    size="lg"
-                    color="main0"
-                    tw="!my-0"
-                  >
-                    Explore the future of AI
-                  </Button>
-                </div>
-              </Col>
-              <Col>
-                <Image
-                  src={`${imgPrefix}/img/general-ai-interface.svg`}
-                  alt="Libertai"
-                  fill={true}
-                  tw="relative!"
-                />
-              </Col>
-            </Row>
-          </div>
-        </Container>
-      </section>
-      <section className="fx-grain-1" tw="px-0 pt-20 pb-10 md:pb-20" ref={ref3}>
-        <Container>
-          <Row xs={1} md={2} gap="1.5rem">
-            <Col>
-              <Image
-                src={`${imgPrefix}/img/general-ipfs-storage.svg`}
-                alt="Developer Friendly"
-                fill={true}
-                tw="relative!"
-              />
-            </Col>
-            <Col xs={1} md={1}>
-              <div className="bg-base0" tw="p-6">
-                <span className="tp-info text-main0" tw="mb-0">
-                  Use case
-                </span>
-                <H2 className="tp-h4 md:tp-h3">Request network</H2>
-                <p className="fs-18" tw="mt-0 mb-16">
-                  Aleph.im collaborated with Request Network, the invoicing
-                  technology for DeFi, DAOs, and Crypto-first companies.
-                  <br />
-                  <br />
-                  Aleph.im bridged Request's dedicated IPFS network and the IPFS
-                  public network, providing backup storage for invoicing and
-                  transaction data. This partnership added more resilience and
-                  decentralization to the Request network, trusted by notable
-                  companies in the crypto industry like Maker, Gnosis, Aave,
-                  Ocean, and Near Foundation.
-                </p>
-                <Button
-                  forwardedAs="a"
-                  href="https://console.aleph.im/"
-                  target="_blank"
-                  kind="gradient"
-                  variant="tertiary"
-                  size="lg"
-                  color="main0"
-                  tw="!my-0"
-                >
-                  Read the case
-                </Button>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-      <section tw="px-0 py-12 lg:py-36">
+      <section className="fx-grain-1" tw="px-0 py-12 lg:py-36">
         <Container>
           <div tw="relative">
             <Row xs={1} md={2} gap="1.5rem">
