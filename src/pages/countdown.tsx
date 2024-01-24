@@ -1,9 +1,13 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import Head from 'next/head'
-import { TextGradient } from '@aleph-front/core'
+import {
+  TextGradient,
+  useResponsiveMin,
+  useTransitionedEnterExit,
+} from '@aleph-front/core'
 import tw from 'twin.macro'
 
-const launchTime = new Date('2024-01-26T11:00:00.000Z').valueOf()
+const launchTime = 1706266800000
 
 function toBase(time: number, base: number) {
   let decimal = Math.max(launchTime - Math.trunc(time / 1000), 0)
@@ -89,6 +93,12 @@ export default function UseCases() {
   )
   const showTime = useMemo(() => clicks >= 26 || hotkey, [clicks, hotkey])
 
+  const mobile = useResponsiveMin('md')
+  const size = useMemo(() => (!mobile ? '3.5rem' : '8rem'), [mobile])
+
+  const { state, shouldMount } = useTransitionedEnterExit({ onOff: showTime })
+  const show = state === 'enter'
+
   return (
     <>
       <Head>
@@ -107,21 +117,23 @@ export default function UseCases() {
             time > 0 && tw`opacity-100`,
           ]}
         >
+          {shouldMount && (
+            <TextGradient
+              color="main0"
+              size={size}
+              type="header"
+              forwardedAs="h1"
+              css={[
+                tw`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-all opacity-0 duration-1000`,
+                show && tw`opacity-100`,
+              ]}
+            >
+              {date}
+            </TextGradient>
+          )}
           <TextGradient
             color="main0"
-            size="8rem"
-            type="header"
-            forwardedAs="h1"
-            css={[
-              tw`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-all opacity-0 duration-1000`,
-              showTime && tw`opacity-100`,
-            ]}
-          >
-            {date}
-          </TextGradient>
-          <TextGradient
-            color="main0"
-            size="8rem"
+            size={size}
             type="header"
             forwardedAs="h1"
             css={[
