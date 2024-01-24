@@ -1,8 +1,9 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import Head from 'next/head'
 import { TextGradient } from '@aleph-front/core'
+import tw from 'twin.macro'
 
-const launchTime = new Date('2024-01-26T09:00:00.000Z').valueOf()
+const launchTime = new Date('2024-01-26T11:00:00.000Z').valueOf()
 
 function toBase(time: number, base: number) {
   let decimal = Math.max(launchTime - Math.trunc(time / 1000), 0)
@@ -35,9 +36,9 @@ function timeToDate(time: number): string {
   const mins = Math.floor((rem - hours * hour) / min)
   const secs = Math.floor((rem - (hours * hour + mins * min)) / sec)
 
-  const h = hours.toString().padEnd(2, '0')
-  const m = mins.toString().padEnd(2, '0')
-  const s = secs.toString().padEnd(2, '0')
+  const h = hours.toString().padStart(2, '0')
+  const m = mins.toString().padStart(2, '0')
+  const s = secs.toString().padStart(2, '0')
 
   return `${h}:${m}:${s}`
 }
@@ -69,20 +70,10 @@ export default function UseCases() {
         return new Set(keys)
       })
     }
-
-    const handleKeyup = (e: KeyboardEvent) => {
-      setKeys((keys) => {
-        keys.delete(e.key)
-        return new Set(keys)
-      })
-    }
-
     document.addEventListener('keydown', handleKeydown)
-    document.addEventListener('keyup', handleKeyup)
 
     return () => {
       document.removeEventListener('keydown', handleKeydown)
-      document.removeEventListener('keyup', handleKeyup)
     }
   }, [])
 
@@ -107,19 +98,40 @@ export default function UseCases() {
       </Head>
       <section
         className="fx-grain-1"
-        tw="fixed! top-0 left-0 w-full h-full flex flex-col items-center justify-center p-6!"
+        tw="fixed! top-0 left-0 w-full h-full flex flex-col items-center justify-center p-6! select-none"
         onClick={handleClicks}
       >
-        <TextGradient
-          color="main0"
-          size="8rem"
-          type="header"
-          forwardedAs="h1"
-          tw="pointer-events-none"
+        <div
+          css={[
+            tw`relative cursor-pointer select-none transition-all opacity-0 duration-1000`,
+            time > 0 && tw`opacity-100`,
+          ]}
         >
-          {showTime ? date : date26}
-        </TextGradient>
-
+          <TextGradient
+            color="main0"
+            size="8rem"
+            type="header"
+            forwardedAs="h1"
+            css={[
+              tw`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-all opacity-0 duration-1000`,
+              showTime && tw`opacity-100`,
+            ]}
+          >
+            {date}
+          </TextGradient>
+          <TextGradient
+            color="main0"
+            size="8rem"
+            type="header"
+            forwardedAs="h1"
+            css={[
+              tw`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-all opacity-0 duration-1000`,
+              !showTime && tw`opacity-100`,
+            ]}
+          >
+            {date26}
+          </TextGradient>
+        </div>
         <div
           className="tp-body2 fs-18"
           tw="absolute left-0 bottom-0 w-full flex gap-2 items-center justify-center p-6"
