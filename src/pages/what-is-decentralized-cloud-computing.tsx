@@ -1,35 +1,10 @@
-import { useEffect } from 'react'
 import Head from 'next/head'
 import { Col, Row, TextGradient, Breadcrumb } from '@aleph-front/core'
 import Container from '@/components/Container'
-import { useScrollTo } from '@/hooks'
-import { useRouter } from 'next/router'
 import Link from 'next/link'
 import DecentralizedTools from '@/components/DecentralizedTools'
 import { GetUpdatesSection } from '@/components/GetUpdatesSection/cmp'
-export default function UseCases() {
-  const [ref1, handleScroll1] = useScrollTo()
-  const [ref2, handleScroll2] = useScrollTo()
-  const [ref3, handleScroll3] = useScrollTo()
-
-  const { asPath } = useRouter()
-
-  useEffect(() => {
-    const [, hash] = asPath.split('#')
-
-    switch (hash) {
-      case 'solutions': {
-        return handleScroll1()
-      }
-      case 'roadmap': {
-        return handleScroll2()
-      }
-      case 'indexing': {
-        return handleScroll3()
-      }
-    }
-  }, [asPath, handleScroll1, handleScroll2, handleScroll3])
-
+export default function WhatIsDecentralizedCloudComputing() {
   return (
     <>
       <Head>
@@ -79,7 +54,7 @@ export default function UseCases() {
           </div>
         </Container>
       </section>
-      <section tw="px-0 pt-0 pb-10 md:pb-20" ref={ref3}>
+      <section tw="px-0 pt-0 pb-10 md:pb-20">
         <Container>
           <Row xs={1} md={1} gap="1.5rem">
             <Col>

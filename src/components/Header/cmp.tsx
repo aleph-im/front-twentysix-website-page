@@ -1,48 +1,44 @@
-import {
-  Logo,
-  NavbarLink,
-  NavbarLinkList,
-  RouterNavbar,
-} from '@aleph-front/core'
+import { LinkComponent, RouterNavbar } from '@aleph-front/core'
+
 import Link from 'next/link'
 
-import { StyledHeader, StyledButton, StyledNavbar } from './styles'
+import { StyledHeader } from './styles'
 import { useCallback, useState } from 'react'
+import { useRouter } from 'next/router'
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
-  const handleCloseMenu = useCallback(() => setIsOpen(false), [setIsOpen])
+  const handleCloseMenu = useCallback((open: boolean) => setIsOpen(open), [])
+
+  const router = useRouter()
 
   return (
     <StyledHeader>
       <RouterNavbar
-        Link={function noRefCheck() {}}
+        Link={Link as LinkComponent}
         breakpoint="md"
-        onToggle={function noRefCheck() {}}
-        pathname="/"
+        pathname={router.pathname}
+        onToggle={handleCloseMenu}
+        open={isOpen}
         routes={[
           {
             external: true,
-            href: 'https://console.twentysix.cloud/',
+            href: 'https://docs.aleph.im/',
             name: 'Developers',
             target: '_blank',
           },
           {
-            external: true,
-            href: 'https://twentysix.cloud/',
+            href: '/',
             name: 'Solutions',
+            exact: true,
           },
           {
-            external: true,
-            href: 'https://explorer.aleph.im/',
+            href: '/use-cases',
             name: 'Use cases',
-            target: '_blank',
           },
           {
-            external: true,
-            href: 'https://swap.aleph.im/',
+            href: '/contact',
             name: 'Contact us',
-            target: '_blank',
           },
         ]}
       />

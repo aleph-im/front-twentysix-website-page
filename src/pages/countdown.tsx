@@ -47,7 +47,7 @@ function timeToDate(time: number): string {
   return `${h}:${m}:${s}`
 }
 
-export default function UseCases() {
+export default function Countdown() {
   const [time, setTime] = useState(0)
   const [clicks, setClicks] = useState(0)
   const [keys, setKeys] = useState(new Set())

@@ -1,8 +1,4 @@
-import {
-  Button,
-  TextInput,
-  useResponsiveMin,
-} from '@aleph-front/core'
+import { Button, TextInput, useResponsiveMin } from '@aleph-front/core'
 
 const SignMeUpButton = () => (
   <Button

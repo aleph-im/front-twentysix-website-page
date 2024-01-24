@@ -73,7 +73,7 @@ export default function UseCases() {
                   Use cases
                 </TextGradient>
                 <p className="tp-h7 text-base2 fs-26" tw="mt-8">
-                  subtitle when needed only
+                  Solve your business problems with our industry solutions
                 </p>
               </Col>
             </Row>
@@ -120,7 +120,7 @@ export default function UseCases() {
                   color="main0"
                   tw="!my-0"
                 >
-                  Read the case
+                  Learn more
                 </Button>
               </div>
             </Col>

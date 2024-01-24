@@ -97,7 +97,7 @@ export const DecentralizedTools = () => {
                 color="main0"
                 tw="!my-0"
               >
-                Launch cloud dApp <Icon name="map" color="base0" />
+                Launch console
               </Button>
             </Col>
           </Row>
