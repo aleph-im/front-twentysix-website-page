@@ -118,23 +118,43 @@ export default function Contact() {
                       placeholder="Choose an option"
                       required={true}
                     >
-                      <DropdownOption value="Host a Core Channel Node">
+                      <DropdownOption
+                        key="Host a Core Channel Node"
+                        value="Host a Core Channel Node"
+                      >
                         Host a Core Channel Node
                       </DropdownOption>
-                      <DropdownOption value="Become a Twentysix Cloud partner">
+                      <DropdownOption
+                        key="Become a Twentysix Cloud partner"
+                        value="Become a Twentysix Cloud partner"
+                      >
                         Become a Twentysix Cloud partner
                       </DropdownOption>
-                      <DropdownOption value="Building an application">
+                      <DropdownOption
+                        key="Building an application"
+                        value="Building an application"
+                      >
                         Building an application
                       </DropdownOption>
-                      <DropdownOption value="Get support with computing">
+                      <DropdownOption
+                        key="Get support with computing"
+                        value="Get support with computing"
+                      >
                         Get support with computing
                       </DropdownOption>
-                      <DropdownOption value="Get support with storage">
+                      <DropdownOption
+                        key="Get support with storage"
+                        value="Get support with storage"
+                      >
                         Get support with storage
                       </DropdownOption>
-                      <DropdownOption value="Careers">Careers</DropdownOption>
-                      <DropdownOption value="Other (please describe it below)">
+                      <DropdownOption key="Careers" value="Careers">
+                        Careers
+                      </DropdownOption>
+                      <DropdownOption
+                        key="Other (please describe it below)"
+                        value="Other (please describe it below)"
+                      >
                         Other (please describe it below)
                       </DropdownOption>
                     </Dropdown>
