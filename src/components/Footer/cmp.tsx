@@ -107,7 +107,7 @@ export const Footer = () => {
               },
               {
                 label: 'Decentralized cloud solution',
-                href: 'https://twentysix.cloud/decentralize-cloud-solution',
+                href: 'https://twentysix.cloud/decentralized-cloud-solution',
               },
               {
                 label: 'What is decentralized cloud computing?',
@@ -120,7 +120,7 @@ export const Footer = () => {
             links: [
               {
                 label: 'Media kit',
-                href: 'https://ipfs.io/ipfs/QmNWKXft4CFUQcsEacjgg4YzqE1CdgEf145wa8f3bDvXY5',
+                href: 'https://ipfs.aleph.cloud/ipfs/QmaFMoSzV3tncoHsD4bDKKqLHWrAQjGM2hWeDXSwoD2DCs?filename=twentysix-media.zip',
               },
               {
                 label: 'Aleph.im technology',
