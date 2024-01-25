@@ -39,8 +39,11 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Aleph.im</title>
-        <meta name="description" content="Aleph.im" />
+        <title>Decentralized Cloud Computing | Twentysix Cloud</title>
+        <meta
+          name="description"
+          content="Twentysix Cloud is a Web3 Decentralized Cloud for building, training, deploying, and scaling AI Models & dApps on-chain."
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <section tw="px-0 py-12 lg:py-36">
@@ -263,6 +266,7 @@ export default function Home() {
                   width={51}
                   height={48}
                   alt="Campfire"
+                  tw="mx-auto"
                 />
               </div>
             </div>

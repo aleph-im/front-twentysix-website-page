@@ -8,8 +8,11 @@ export default function DecentralizedCloudSolution() {
   return (
     <>
       <Head>
-        <title>Aleph.im</title>
-        <meta name="description" content="Aleph.im" />
+        <title>Decentralized Cloud Solutions | Twentysix Cloud</title>
+        <meta
+          name="description"
+          content="Experience the future of cloud computing with Twentysix Cloud's decentralized solutions. Tailored for businesses seeking secure, scalable, and efficient cloud solutions."
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <section tw="p-0 pt-12 lg:pt-20">
@@ -21,16 +24,10 @@ export default function DecentralizedCloudSolution() {
                   Home
                 </Link>,
                 <Link
-                  href="/src/pages/what-is-twentysix-cloud"
-                  key={'why-twentysix'}
-                >
-                  Why Twentysix
-                </Link>,
-                <Link
-                  href="/src/pages/decentralized-cloud-solution"
+                  href="/decentralized-cloud-solution"
                   key={'decentralized-cloud-solution'}
                 >
-                  ...
+                  Decentralized cloud solutions
                 </Link>,
               ]}
             />
@@ -47,7 +44,7 @@ export default function DecentralizedCloudSolution() {
                   solution
                 </TextGradient>
                 <p className="tp-h7 text-base2 fs-26" tw="mt-8">
-                  subtitle when needed only
+                  Flexibility to build and run dApps
                 </p>
               </Col>
             </Row>
@@ -66,9 +63,10 @@ export default function DecentralizedCloudSolution() {
                   uptime and resilience against attacks. Embrace a network
                   that&apos;s not just robust but also promotes a
                   community-driven model where you benefit from shared resources
-                  and collective growth. Twentysix Cloud is not just a service;
-                  it&apos;s a movement towards a more secure, democratic, and
-                  efficient cloud ecosystem.
+                  and collective growth. <br />
+                  Build, deploy, and and manage applications on our scalable
+                  infrastructure. Store any type and amount of data, anywhere
+                  and anytime with our GDPR compliant technology.
                 </p>
                 <div tw="max-w-3xl mx-auto mb-32"></div>
               </div>

@@ -9,8 +9,11 @@ export default function LegalMentions() {
   return (
     <>
       <Head>
-        <title>Aleph.im | Legal Mentions</title>
-        <meta name="description" content="Aleph.im legal mentions" />
+        <title>Legal Mentions | Twentysix Cloud</title>
+        <meta
+          name="description"
+          content="Stay informed about our compliance with industry standards and regulations in decentralized cloud solutions."
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <section tw="p-0 pt-12 lg:pt-20">
@@ -36,9 +39,6 @@ export default function LegalMentions() {
                 >
                   Legal mentions
                 </TextGradient>
-                <p className="tp-h7 text-base2 fs-26" tw="mt-8">
-                  subtitle when needed only
-                </p>
               </Col>
             </Row>
           </div>

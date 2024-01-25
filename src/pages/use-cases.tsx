@@ -1,13 +1,7 @@
 import { useEffect } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
-import {
-  Button,
-  Col,
-  Row,
-  TextGradient,
-  Breadcrumb,
-} from '@aleph-front/core'
+import { Button, Col, Row, TextGradient, Breadcrumb } from '@aleph-front/core'
 import Container from '@/components/Container'
 import H2 from '@/components/H2'
 import { useScrollTo } from '@/hooks'
@@ -45,8 +39,11 @@ export default function UseCases() {
   return (
     <>
       <Head>
-        <title>Aleph.im</title>
-        <meta name="description" content="Aleph.im" />
+        <title>Use cases and success stories | Twentysix Cloud</title>
+        <meta
+          name="description"
+          content="Explore real-world applications of Twentysix Cloud's decentralized cloud solutions. See how businesses harness our technology for improved efficiency and security."
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <section tw="p-0 pt-12 lg:pt-20">
@@ -143,13 +140,11 @@ export default function UseCases() {
                   </H2>
                   <p className="fs-18" tw="mt-0 mb-16">
                     Libertai&apos;s large language models run on a combination
-                    of technologies such as IPFS and aleph.im. This synergy
-                    results in a fully decentralized, uncensored, secure, and
-                    resilient computing network that is, in essence,
-                    unstoppable. <br />
-                    <br />
-                    By utilizing Aleph.im&apos;s compute resource nodes,
-                    Libertai presents an innovative way to deliver AI
+                    of technologies such as IPFS and Twentysix Cloud. This
+                    synergy results in a fully decentralized, uncensored,
+                    secure, and resilient computing network that is, in essence,
+                    unstoppable. By using aleph.im&apos;s Compute Resource
+                    Nodes, Libertai presents an innovative way to deliver AI
                     technology, reinforcing its resilience, security, and
                     scalability, while ensuring user privacy and data integrity.
                   </p>

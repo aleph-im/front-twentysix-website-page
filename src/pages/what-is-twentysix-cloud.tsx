@@ -15,8 +15,11 @@ export default function WhatIsTwentysixCloud() {
   return (
     <>
       <Head>
-        <title>Aleph.im</title>
-        <meta name="description" content="Aleph.im" />
+        <title>What is Twentysix Cloud? | Understanding Twentysix Cloud</title>
+        <meta
+          name="description"
+          content="Learn what sets Twentysix Cloud apart in the decentralized cloud industry. Dive into our solutions, and the benefits of choosing our advanced cloud technology."
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <section tw="p-0 pt-12 lg:pt-20">
@@ -28,10 +31,10 @@ export default function WhatIsTwentysixCloud() {
                   Home
                 </Link>,
                 <Link
-                  href="/src/pages/what-is-twentysix-cloud"
+                  href="/what-is-twentysix-cloud"
                   key={'what-is-twentysix-cloud'}
                 >
-                  Why Twentysix
+                  What is Twentysix Cloud?
                 </Link>,
               ]}
             />
@@ -48,7 +51,7 @@ export default function WhatIsTwentysixCloud() {
                   cloud ?
                 </TextGradient>
                 <p className="tp-h7 text-base2 fs-26" tw="mt-8">
-                  subtitle when needed only
+                  The leading decentralized cloud computing
                 </p>
               </Col>
             </Row>
@@ -66,7 +69,7 @@ export default function WhatIsTwentysixCloud() {
                   platform offers a suite of cloud solutions that mirror the
                   efficiency and scalability you expect from traditional cloud
                   services but with the added benefits of decentralized
-                  technology. By leveraging the robustness of Aleph.im,
+                  technology. By leveraging the robustness of aleph.im,
                   Twentysix Cloud provides a secure, resilient, and transparent
                   cloud experience, setting a new standard for modern cloud
                   infrastructures.

@@ -7,6 +7,6 @@ export const StyledContainer = styled.div`
     box-sizing: border-box;
     width: 100%;
     margin: 0 auto;
-    max-width: ${theme.breakpoint.xxl + 12.5}rem;
+    max-width: 100rem;
   `}
 `

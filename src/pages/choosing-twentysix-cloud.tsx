@@ -5,12 +5,15 @@ import H2 from '@/components/H2'
 import Link from 'next/link'
 import DecentralizedTools from '@/components/DecentralizedTools'
 import { GetUpdatesSection } from '@/components/GetUpdatesSection/cmp'
-export default function WhyTwentysixCloud() {
+export default function ChoosingTwentysixCloud() {
   return (
     <>
       <Head>
-        <title>Aleph.im</title>
-        <meta name="description" content="Aleph.im" />
+        <title>Why Twentysix Cloud? | Twentysix Cloud</title>
+        <meta
+          name="description"
+          content="Discover why Twentysix Cloud is the preferred choice for decentralized cloud solutions. Learn about our commitment to security, scalability, and innovation."
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <section tw="p-0 pt-12 lg:pt-20">
@@ -22,10 +25,10 @@ export default function WhyTwentysixCloud() {
                   Home
                 </Link>,
                 <Link
-                  href="/src/pages/why-twentysix-cloud"
-                  key={'why-twentysix-cloud'}
+                  href="/choosing-twentysix-cloud"
+                  key={'choosing-twentysix-cloud'}
                 >
-                  Why Twentysix
+                  Choosing Twentysix cloud?
                 </Link>,
               ]}
             />
@@ -42,7 +45,7 @@ export default function WhyTwentysixCloud() {
                   cloud ?
                 </TextGradient>
                 <p className="tp-h7 text-base2 fs-26" tw="mt-8">
-                  subtitle when needed only
+                  Welcome to future of decentralized cloud
                 </p>
               </Col>
             </Row>

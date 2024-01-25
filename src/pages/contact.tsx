@@ -13,14 +13,15 @@ import {
 import Container from '@/components/Container'
 import Link from 'next/link'
 import DecentralizedTools from '@/components/DecentralizedTools'
-import Image from 'next/image'
-import H2 from '@/components/H2'
 export default function Contact() {
   return (
     <>
       <Head>
-        <title>Aleph.im</title>
-        <meta name="description" content="Aleph.im" />
+        <title>Talk with an expert | Twentysix Cloud</title>
+        <meta
+          name="description"
+          content="Get in touch with Twentysix Cloud experts for queries on our decentralized cloud computing. Our team is ready to assist you with your cloud service needs."
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <section tw="p-0 pt-12 lg:pt-20">
@@ -72,58 +73,97 @@ export default function Contact() {
         <Container>
           <Row xs={1}>
             <Col>
-              <div className="fx-grain-2" tw="p-6 w-1/2 mx-auto">
-                <div tw="pb-6 mb-4">
-                  <TextInput
-                    label="Name"
-                    placeholder="Name"
-                    name="name"
-                    required={true}
-                  />
-                </div>
-                <div tw="pb-6 mb-4">
-                  <TextInput
-                    label="Email"
-                    placeholder="Email"
-                    name="email"
-                    required={true}
-                  />
-                </div>
-                <div tw="pb-6 mb-4">
-                  <Dropdown
-                    label="Interested in"
-                    name="interested-in"
-                    placeholder="Choose an option"
-                    required={true}
+              <form
+                action="https://aleph.us17.list-manage.com/subscribe/post?u=40af570491d53f28c5ae6f1ab&amp;id=4850a3195f"
+                method="post"
+                id="mc-embedded-subscribe-form"
+                name="mc-embedded-subscribe-form"
+                rel="noopener noreferrer"
+                noValidate
+              >
+                <div className="fx-grain-2" tw="p-6 w-full sm:w-1/2 mx-auto">
+                  <div
+                    style={{ position: 'absolute', left: '-4500px' }}
+                    aria-hidden="true"
                   >
-                    <DropdownOption value="option-1">Option 1</DropdownOption>
-                    <DropdownOption value="option-2">Option 2</DropdownOption>
-                  </Dropdown>
+                    <input
+                      type="text"
+                      name="b_40af570491d53f28c5ae6f1ab_4850a3195f"
+                      tabIndex={-1}
+                      defaultValue=""
+                    />
+                  </div>
+                  <div tw="pb-6 mb-4">
+                    <TextInput
+                      label="Name"
+                      placeholder="Name"
+                      name="name"
+                      required={true}
+                    />
+                  </div>
+                  <div tw="pb-6 mb-4">
+                    <TextInput
+                      type="email"
+                      label="Email"
+                      placeholder="Email"
+                      name="EMAIL"
+                      id="mce-EMAIL"
+                      required={true}
+                    />
+                  </div>
+                  <div tw="pb-6 mb-4">
+                    <Dropdown
+                      label="Interested in"
+                      name="interested-in"
+                      placeholder="Choose an option"
+                      required={true}
+                    >
+                      <DropdownOption value="Host a Core Channel Node">
+                        Host a Core Channel Node
+                      </DropdownOption>
+                      <DropdownOption value="Become a Twentysix Cloud partner">
+                        Become a Twentysix Cloud partner
+                      </DropdownOption>
+                      <DropdownOption value="Building an application">
+                        Building an application
+                      </DropdownOption>
+                      <DropdownOption value="Get support with computing">
+                        Get support with computing
+                      </DropdownOption>
+                      <DropdownOption value="Get support with storage">
+                        Get support with storage
+                      </DropdownOption>
+                      <DropdownOption value="Careers">Careers</DropdownOption>
+                      <DropdownOption value="Other (please describe it below)">
+                        Other (please describe it below)
+                      </DropdownOption>
+                    </Dropdown>
+                  </div>
+                  <div tw="pb-6">
+                    <TextArea
+                      label="Message"
+                      name="message"
+                      placeholder="Tell us more."
+                      required={true}
+                      tw="h-48"
+                    />
+                  </div>
                 </div>
-                <div tw="pb-6">
-                  <TextArea
-                    label="Message"
-                    name="message"
-                    placeholder="Tell us more."
-                    required={true}
-                    tw="h-48"
-                  />
+                <div tw="p-6 w-1/2 mx-auto mt-2.5 text-center">
+                  <Button
+                    type="submit"
+                    href=""
+                    target="_blank"
+                    kind="gradient"
+                    variant="primary"
+                    size="lg"
+                    color="main0"
+                    tw="!my-0"
+                  >
+                    Send
+                  </Button>
                 </div>
-              </div>
-              <div tw="p-6 w-1/2 mx-auto mt-2.5 text-center">
-                <Button
-                  forwardedAs="button"
-                  href=""
-                  target="_blank"
-                  kind="gradient"
-                  variant="primary"
-                  size="lg"
-                  color="main0"
-                  tw="!my-0"
-                >
-                  Send
-                </Button>
-              </div>
+              </form>
             </Col>
           </Row>
         </Container>

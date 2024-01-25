@@ -1,4 +1,4 @@
-import { LinkComponent, RouterNavbar } from '@aleph-front/core'
+import { Button, LinkComponent, RouterNavbar } from '@aleph-front/core'
 
 import Link from 'next/link'
 
@@ -41,7 +41,20 @@ export const Header = () => {
             name: 'Contact us',
           },
         ]}
-      />
+      >
+        <Button
+          forwardedAs="a"
+          href="https://console.twentysix.cloud"
+          target="_blank"
+          kind="yellow"
+          variant="primary"
+          size="lg"
+          color="main0"
+          tw="!my-0 self-center sm:self-auto mt-14 sm:mt-0"
+        >
+          Launch cloud app
+        </Button>
+      </RouterNavbar>
     </StyledHeader>
   )
 }
