@@ -10,7 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@aleph-front/core": "^1.15.24",
+    "@aleph-front/core": "^1.15.25",
     "aleph-sdk-ts": "^3.4.3",
     "eslint": "8.35.0",
     "eslint-config-next": "13.2.1",
