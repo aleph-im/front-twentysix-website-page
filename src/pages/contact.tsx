@@ -13,7 +13,10 @@ import {
 import Container from '@/components/Container'
 import Link from 'next/link'
 import DecentralizedTools from '@/components/DecentralizedTools'
+import { useState } from 'react'
 export default function Contact() {
+  const [dropdownValue, setDropdownValue] = useState<string | string[]>()
+
   return (
     <>
       <Head>
@@ -97,7 +100,8 @@ export default function Contact() {
                     <TextInput
                       label="Name"
                       placeholder="Name"
-                      name="name"
+                      name="NAME"
+                      id="mce-NAME"
                       required={true}
                     />
                   </div>
@@ -114,9 +118,12 @@ export default function Contact() {
                   <div tw="pb-6 mb-4">
                     <Dropdown
                       label="Interested in"
-                      name="interested-in"
+                      name="MMERGE2"
+                      id="mce-MMERGE2"
                       placeholder="Choose an option"
                       required={true}
+                      value={dropdownValue}
+                      onChange={setDropdownValue}
                     >
                       <DropdownOption
                         key="Host a Core Channel Node"
@@ -162,7 +169,8 @@ export default function Contact() {
                   <div tw="pb-6">
                     <TextArea
                       label="Message"
-                      name="message"
+                      name="MMERGE5"
+                      id="mce-MMERGE5"
                       placeholder="Tell us more."
                       required={true}
                       tw="h-48"
