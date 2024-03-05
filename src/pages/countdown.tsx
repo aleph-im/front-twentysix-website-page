@@ -3,7 +3,7 @@ import Head from 'next/head'
 import {
   TextGradient,
   useResponsiveMin,
-  useTransitionedEnterExit,
+  useTransition,
 } from '@aleph-front/core'
 import tw from 'twin.macro'
 
@@ -96,8 +96,8 @@ export default function Countdown() {
   const mobile = useResponsiveMin('md')
   const size = useMemo(() => (!mobile ? '3.5rem' : '8rem'), [mobile])
 
-  const { state, shouldMount } = useTransitionedEnterExit({ onOff: showTime })
-  const show = state === 'enter'
+  const { stage, shouldMount } = useTransition(showTime, 1000)
+  const show = stage === 'enter'
 
   return (
     <>

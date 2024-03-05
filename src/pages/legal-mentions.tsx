@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
-import Container from '@/components/Container/cmp'
-import H2 from '@/components/H2/cmp'
+import Container from '@/components/Container'
+import H2 from '@/components/H2'
 import { Breadcrumb, Col, Row, TextGradient } from '@aleph-front/core'
 import Link from 'next/link'
 
@@ -33,8 +33,9 @@ export default function LegalMentions() {
               <Col>
                 <TextGradient
                   color="main0"
-                  type="header"
+                  type="h1"
                   forwardedAs="h1"
+                  className="tp-h1 md:tp-header"
                   tw="mb-0"
                 >
                   Legal mentions

@@ -4,7 +4,7 @@ import Container from '@/components/Container'
 import H2 from '@/components/H2'
 import Link from 'next/link'
 import DecentralizedTools from '@/components/DecentralizedTools'
-import { GetUpdatesSection } from '@/components/GetUpdatesSection/cmp'
+import GetUpdatesSection from '@/components/GetUpdatesSection'
 export default function ChoosingTwentysixCloud() {
   return (
     <>
@@ -36,8 +36,9 @@ export default function ChoosingTwentysixCloud() {
               <Col>
                 <TextGradient
                   color="main0"
-                  type="header"
+                  type="h1"
                   forwardedAs="h1"
+                  className="tp-h1 md:tp-header"
                   tw="mb-0"
                 >
                   Choosing <br />

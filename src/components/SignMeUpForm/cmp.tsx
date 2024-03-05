@@ -50,6 +50,7 @@ export const SignMeUpForm = () => {
             required
             buttonStyle="stuck"
             button={<SignMeUpButton />}
+            tw="w-[24rem] max-w-full"
           />
         ) : (
           <TextInput

@@ -14,6 +14,7 @@ import Container from '@/components/Container'
 import Link from 'next/link'
 import DecentralizedTools from '@/components/DecentralizedTools'
 import { useState } from 'react'
+
 export default function Contact() {
   const [dropdownValue, setDropdownValue] = useState<string | string[]>()
 
@@ -44,8 +45,9 @@ export default function Contact() {
               <Col>
                 <TextGradient
                   color="main0"
-                  type="header"
+                  type="h1"
                   forwardedAs="h1"
+                  className="tp-h1 md:tp-header"
                   tw="mb-0"
                 >
                   Get in touch

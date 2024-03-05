@@ -9,7 +9,8 @@ import { useRouter } from 'next/router'
 import { useBasePath } from '@/hooks/useBasePath'
 import Link from 'next/link'
 import DecentralizedTools from '@/components/DecentralizedTools'
-import { GetUpdatesSection } from '@/components/GetUpdatesSection/cmp'
+import GetUpdatesSection from '@/components/GetUpdatesSection'
+
 export default function UseCases() {
   const [ref1, handleScroll1] = useScrollTo()
   const [ref2, handleScroll2] = useScrollTo()
@@ -63,8 +64,9 @@ export default function UseCases() {
               <Col>
                 <TextGradient
                   color="main0"
-                  type="header"
+                  type="h1"
                   forwardedAs="h1"
+                  className="tp-h1 md:tp-header"
                   tw="mb-0"
                 >
                   Use cases

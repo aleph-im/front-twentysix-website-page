@@ -3,7 +3,8 @@ import { Col, Row, TextGradient, Breadcrumb } from '@aleph-front/core'
 import Container from '@/components/Container'
 import Link from 'next/link'
 import DecentralizedTools from '@/components/DecentralizedTools'
-import { GetUpdatesSection } from '@/components/GetUpdatesSection/cmp'
+import GetUpdatesSection from '@/components/GetUpdatesSection'
+
 export default function DecentralizedCloudSolution() {
   return (
     <>
@@ -35,8 +36,9 @@ export default function DecentralizedCloudSolution() {
               <Col>
                 <TextGradient
                   color="main0"
-                  type="header"
+                  type="h1"
                   forwardedAs="h1"
+                  className="tp-h1 md:tp-header"
                   tw="mb-0"
                 >
                   Decentralized <br />

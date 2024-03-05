@@ -22,4 +22,4 @@ export const GetUpdatesSection = () => {
   )
 }
 
-export default SignMeUpForm
+export default GetUpdatesSection

@@ -9,16 +9,20 @@ export const Footer = () => {
         small: false,
         buttons: [
           {
-            label: 'Work with us',
-            href: '/contact',
-          },
-          {
-            label: 'Try our cloud',
-            href: '',
+            label: 'Join the collective',
+            href: '/collective',
+            props: {
+              variant: 'primary',
+            },
           },
           {
             label: 'Start a project',
             href: 'https://docs.aleph.im/computing/',
+            target: '_blank',
+          },
+          {
+            label: 'Try our cloud',
+            href: 'https://console.twentysix.cloud/',
             target: '_blank',
           },
         ],
