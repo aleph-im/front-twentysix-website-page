@@ -36,9 +36,9 @@ export default function DecentralizedCloudSolution() {
               <Col>
                 <TextGradient
                   color="main0"
-                  type="h1"
+                  type="h2"
                   forwardedAs="h1"
-                  className="tp-h1 md:tp-header"
+                  className="tp-h2 md:tp-header"
                   tw="mb-0"
                 >
                   Decentralized <br />

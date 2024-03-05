@@ -44,9 +44,9 @@ export default function CollectivePage() {
           <div tw="mt-8">
             <TextGradient
               color="main0"
-              type="h1"
+              type="h2"
               as="h1"
-              className="tp-h1 md:tp-header"
+              className="tp-h2 md:tp-header"
             >
               Join the Twentysix Cloud Collective
             </TextGradient>
@@ -83,7 +83,9 @@ export default function CollectivePage() {
                 <span className="tp-info text-main0" tw="mb-0">
                   Become part of Twentysix Cloud Collective
                 </span>
-                <H2 className="tp-h4 md:tp-h3">Why become a part of</H2>
+                <H2 className="tp-h4 md:tp-h3" tw="m-0">
+                  Why become a part of
+                </H2>
                 <ol className="fs-18" tw="mt-6 mb-16 !list-decimal pl-6">
                   <li>Bring decentralization to the traditional world </li>
                   <li>Influence aleph.im community initiatives</li>
@@ -116,13 +118,13 @@ export default function CollectivePage() {
                   <span className="tp-info text-main0" tw="mb-0">
                     Become part of Twentysix Cloud Collective
                   </span>
-                  <H2 className="tp-h4 md:tp-h3">
+                  <H2 className="tp-h4 md:tp-h3" tw="m-0">
                     Collective responsibilities
                   </H2>
                   <p className="fs-18" tw="mt-6 mb-6">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Mauris convallis, quam quis vehicula pulvinar, nisl elit
-                    finibus sem.
+                    The Twentysix Collective is dedicated to creating a
+                    welcoming environment where people can interact, contribute,
+                    share, and learn. 
                   </p>
                   <div tw="mt-12 mb-16">
                     <BulletList
@@ -188,20 +190,25 @@ export default function CollectivePage() {
       <section tw="px-0 pt-20 pb-10 md:pb-20">
         <Container>
           <div>
+            <div tw="p-6 mb-6">
+              <H2 className="tp-h4 md:tp-h3" tw="m-0 mx-auto">
+                Let’s grow decentralized cloud together
+              </H2>
+            </div>
             <Row xs={1} md={24} gap="1.5rem">
               <Col xs={1} md={8}>
                 <div tw="flex flex-col gap-12 px-6">
                   <ObjectItem
                     title="Developer Relation"
-                    content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+                    content="Our documentation has no secrets for you and you like to chat with devs?"
                   />
                   <ObjectItem
                     title="Growth hacker"
-                    content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+                    content="You like to crawl the web and you want to help us grow Twentysix Cloud?"
                   />
                   <ObjectItem
                     title="Community manager"
-                    content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+                    content="You are multilingual and you like to talk about Twentysix Cloud?"
                   />
                 </div>
               </Col>
@@ -217,15 +224,15 @@ export default function CollectivePage() {
                 <div tw="flex flex-col gap-12 px-6">
                   <ObjectItem
                     title="Content creator"
-                    content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+                    content="You like to write tutorials, make videos or you are a master at creating memes?"
                   />
                   <ObjectItem
                     title="Dune wizard analyst"
-                    content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+                    content="Do you like charts and dashboards, and you know how to use Dune? "
                   />
                   <ObjectItem
                     title="Local event coordinator"
-                    content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+                    content="Meet and form friendships with other passionate about decentralization."
                   />
                 </div>
               </Col>
