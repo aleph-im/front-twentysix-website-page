@@ -102,7 +102,7 @@ export default function CollectivePage() {
                   size="lg"
                   color="main0"
                 >
-                  Become a Collective member
+                  Get involved
                 </Button>
               </div>
             </Col>
@@ -171,7 +171,7 @@ export default function CollectivePage() {
                     size="lg"
                     color="main0"
                   >
-                    Become a Collective member
+                    Get involved
                   </Button>
                 </div>
               </Col>
