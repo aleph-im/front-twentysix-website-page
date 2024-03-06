@@ -5,14 +5,13 @@ import { StyledContainer } from './styles'
 export default function ObjectItem({
   title,
   content,
-  icon = 'wallet',
+  icon,
+  children,
   ...rest
 }: ObjectItemProps) {
   return (
     <StyledContainer {...rest}>
-      <div>
-        <Icon name={icon} size="2.25rem" />
-      </div>
+      <div>{icon ? <Icon name={icon} size="2.25rem" /> : children}</div>
       <div>
         <h3 className="tp-h7" tw="mb-2">
           {title}

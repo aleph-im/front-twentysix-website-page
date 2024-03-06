@@ -201,15 +201,36 @@ export default function CollectivePage() {
                   <ObjectItem
                     title="Developer Relation"
                     content="Our documentation has no secrets for you and you like to chat with devs?"
-                  />
+                  >
+                    <Image
+                      src={`${imgPrefix}/img/collective/collective-1.svg`}
+                      alt="Developer Relation"
+                      fill={true}
+                      tw="relative!"
+                    />
+                  </ObjectItem>
                   <ObjectItem
                     title="Growth hacker"
                     content="You like to crawl the web and you want to help us grow Twentysix Cloud?"
-                  />
+                  >
+                    <Image
+                      src={`${imgPrefix}/img/collective/collective-2.svg`}
+                      alt="Growth hacker"
+                      fill={true}
+                      tw="relative!"
+                    />
+                  </ObjectItem>
                   <ObjectItem
                     title="Community manager"
                     content="You are multilingual and you like to talk about Twentysix Cloud?"
-                  />
+                  >
+                    <Image
+                      src={`${imgPrefix}/img/collective/collective-3.svg`}
+                      alt="Community manager"
+                      fill={true}
+                      tw="relative!"
+                    />
+                  </ObjectItem>
                 </div>
               </Col>
               <Col xs={1} md={8} tw="mt-12 sm:mt-0">
@@ -225,15 +246,36 @@ export default function CollectivePage() {
                   <ObjectItem
                     title="Content creator"
                     content="You like to write tutorials, make videos or you are a master at creating memes?"
-                  />
+                  >
+                    <Image
+                      src={`${imgPrefix}/img/collective/collective-4.svg`}
+                      alt="Content creator"
+                      fill={true}
+                      tw="relative!"
+                    />
+                  </ObjectItem>
                   <ObjectItem
                     title="Dune wizard analyst"
                     content="Do you like charts and dashboards, and you know how to use Dune? "
-                  />
+                  >
+                    <Image
+                      src={`${imgPrefix}/img/collective/collective-5.svg`}
+                      alt="Dune wizard analyst"
+                      fill={true}
+                      tw="relative!"
+                    />
+                  </ObjectItem>
                   <ObjectItem
                     title="Local event coordinator"
                     content="Meet and form friendships with other passionate about decentralization."
-                  />
+                  >
+                    <Image
+                      src={`${imgPrefix}/img/collective/collective-6.svg`}
+                      alt="Local event coordinator"
+                      fill={true}
+                      tw="relative!"
+                    />
+                  </ObjectItem>
                 </div>
               </Col>
             </Row>
