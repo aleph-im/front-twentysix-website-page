@@ -206,7 +206,7 @@ export default function CollectivePage() {
                       src={`${imgPrefix}/img/collective/collective-1.svg`}
                       alt="Developer Relation"
                       fill={true}
-                      tw="relative!"
+                      tw="relative! min-w-min"
                     />
                   </ObjectItem>
                   <ObjectItem
@@ -217,7 +217,7 @@ export default function CollectivePage() {
                       src={`${imgPrefix}/img/collective/collective-2.svg`}
                       alt="Growth hacker"
                       fill={true}
-                      tw="relative!"
+                      tw="relative! min-w-min"
                     />
                   </ObjectItem>
                   <ObjectItem
@@ -228,7 +228,7 @@ export default function CollectivePage() {
                       src={`${imgPrefix}/img/collective/collective-3.svg`}
                       alt="Community manager"
                       fill={true}
-                      tw="relative!"
+                      tw="relative! min-w-min"
                     />
                   </ObjectItem>
                 </div>
@@ -251,7 +251,7 @@ export default function CollectivePage() {
                       src={`${imgPrefix}/img/collective/collective-4.svg`}
                       alt="Content creator"
                       fill={true}
-                      tw="relative!"
+                      tw="relative! min-w-min"
                     />
                   </ObjectItem>
                   <ObjectItem
@@ -262,7 +262,7 @@ export default function CollectivePage() {
                       src={`${imgPrefix}/img/collective/collective-5.svg`}
                       alt="Dune wizard analyst"
                       fill={true}
-                      tw="relative!"
+                      tw="relative! min-w-min"
                     />
                   </ObjectItem>
                   <ObjectItem
@@ -273,7 +273,7 @@ export default function CollectivePage() {
                       src={`${imgPrefix}/img/collective/collective-6.svg`}
                       alt="Local event coordinator"
                       fill={true}
-                      tw="relative!"
+                      tw="relative! min-w-min"
                     />
                   </ObjectItem>
                 </div>
